@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Наталья Лапина](https://up.htmlacademy.ru/adaptive/15/user/782987).
-* Наставник: `Неизвестно`.
+* Наставник: Сергей Прокопеня.
 
 ---
 
