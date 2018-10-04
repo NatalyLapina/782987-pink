@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $font-color;
+  background-color: $bg-color;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  @include visually-hidden;
+} */
