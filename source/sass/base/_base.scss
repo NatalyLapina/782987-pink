@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
   font-family: $font;
   font-size: $font-size;
@@ -28,7 +29,7 @@ img {
   height: auto;
 }
 
-/* .visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
   @include visually-hidden;
-} */
+}

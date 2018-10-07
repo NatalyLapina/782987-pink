@@ -1,0 +1,22 @@
+.reviews {
+  padding: 46px 22px 36px 22px;
+  text-align: center;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__author-name {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  color: $black;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  line-height: 30px;
+}

@@ -1,0 +1,27 @@
+.main-nav__list {
+  text-align: center;
+  @include list-reset;
+}
+
+.site-list__item a {
+  display: block;
+  margin: 0;
+  background-color: $blue-grey;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 16px 20px;
+  box-shadow: 0 -1px 0 $black,
+              inset 0 1px 0 rgba($white, 0.15);
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+}
