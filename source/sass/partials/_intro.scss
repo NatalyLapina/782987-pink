@@ -1,10 +1,21 @@
 .intro {
   width: 100%;
-  height: 396px;
   background-color: $blue-grey;
-  background-image: url(../../img/iphone-hand-mobile@1x.png), url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: left bottom, center top;
+
+  &--index {
+    min-height: 396px;
+    background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom, 0 -65px;
+  }
+
+  &--form {
+    padding: 36px 20px 50px 20px;
+    min-height: 170px;
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -65px;
+  }
 }
 
 .intro__title {
@@ -14,5 +25,4 @@
   font-weight: 300;
   text-align: center;
   color: $white;
-
 }

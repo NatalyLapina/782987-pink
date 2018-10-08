@@ -1,15 +1,14 @@
 @import "vendors/normalize";
-
 @import "helpers/variables";
 @import "helpers/mixins";
-
 @import "base/typography";
 @import "base/base";
-
 @import "components/button";
-
+@import "components/page-header__logo";
+@import "components/page-footer__logo";
+@import "components/page-footer__social";
+@import "components/page-footer__copyright";
 @import "partials/page-header";
-@import "partials/page-header__logo";
 @import "partials/main-nav";
 @import "partials/intro";
 @import "partials/downloads";
@@ -17,3 +16,10 @@
 @import "partials/reviews";
 @import "partials/prices";
 @import "partials/contacts";
+@import "partials/competition";
+@import "partials/form";
+@import "partials/page-footer";
+@import "partials/popup";
+@import "partials/gallery";
+@import "partials/gallery__list";
+@import "partials/post";

@@ -1,5 +1,6 @@
 .main-nav__list {
   text-align: center;
+
   @include list-reset;
 }
 
@@ -14,7 +15,7 @@
   line-height: 32px;
   padding: 16px 20px;
   box-shadow: 0 -1px 0 $black,
-              inset 0 1px 0 rgba($white, 0.15);
+    inset 0 1px 0 rgba($white, 0.15);
 
   &:hover,
   &:focus {
@@ -24,4 +25,10 @@
   &:active {
     color: rgba($pink, 0.3);
   }
+}
+
+.site-list__item:last-child a {
+  box-shadow: 0 -1px 0 $black,
+    inset 0 1px 0 rgba($white, 0.15),
+    inset 0 -1px 0 $black;
 }

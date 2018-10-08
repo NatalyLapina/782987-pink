@@ -1,0 +1,17 @@
+.popup {
+  width: 320px;
+  height: 289px;
+  padding: 40px 22px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.popup__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+}

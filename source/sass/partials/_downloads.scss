@@ -17,17 +17,17 @@
   margin-left: 16px;
 
   &--ios {
-    background: url(../../img/logo-apple.svg) no-repeat;
+    background: url("../../img/logo-apple.svg") no-repeat;
     background-size: 47px 56px;
   }
 
   &--android {
-    background: url(../../img/logo-android.svg) no-repeat;
+    background: url("../../img/logo-android.svg") no-repeat;
     background-size: 43px 47px;
   }
 
   &--windows {
-    background: url(../../img/logo-microsoft.svg) no-repeat;
+    background: url("../../img/logo-microsoft.svg") no-repeat;
     background-size: 44px 41px;
   }
 }
@@ -38,4 +38,3 @@
   font-weight: 300;
   color: $white;
 }
-
