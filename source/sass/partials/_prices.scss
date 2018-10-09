@@ -1,0 +1,42 @@
+.prices {
+  padding-top: 91px;
+  padding-bottom: 42px;
+  text-align: center;
+  background-color: $grey-light;
+  text-transform: uppercase;
+}
+
+.prices__table {
+  border-collapse: collapse;
+  border: 2px solid $grey;
+  line-height: 30px;
+}
+
+.prices__table-header {
+  background-color: $blue-grey;
+  border: 2px solid $grey;
+  color: $white;
+}
+
+.prices__header {
+  width: 276px;
+  padding: 21px 90px;
+}
+
+.prices__name {
+  margin: 0;
+  font-size: 18px;
+}
+
+.prices__amount {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.prices__item {
+  padding: 22px;
+  background-color: $white;
+  border: 2px solid $grey;
+  text-align: left;
+}

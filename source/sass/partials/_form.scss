@@ -1,0 +1,88 @@
+.form {
+  margin: 0;
+  padding-top: 50px;
+}
+
+.form__fieldset {
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+
+  &--achievements {
+    background-color: $grey;
+  }
+
+  &--apps {
+    background-color: $grey;
+  }
+}
+
+.form__field-list {
+  @include list-reset;
+}
+
+.form__field-text {
+  margin-bottom: 28px;
+}
+
+.form__text-label {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.form__text-input {
+  width: 276px;
+  padding: 10px 20px;
+  line-height: 30px;
+  color: $blue-grey;
+  border: 2px solid $grey;
+}
+
+.form__title {
+  width: 100%;
+  margin-bottom: 42px;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--emotions {
+    margin-bottom: 19px;
+    line-height: 30px;
+  }
+}
+
+.form__checkbox-input {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__field-checkbox {
+  margin-bottom: 47px;
+}
+
+.form__radio-fields {
+  margin-bottom: 39px;
+}
+
+.form__textarea {
+  padding: 23px 19px;
+  width: 276px;
+  height: 197px;
+  resize: none;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__note {
+  padding-top: 30px;
+  margin-bottom: 24px;
+  line-height: 30px;
+  text-align: center;
+}

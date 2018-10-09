@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк: Фото</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -31,98 +32,98 @@
     </header>
 
     <main class="page-main-photo">
-
-      <h1 class="intro__title">Фотографии пользователей</h1>
-
+      <header class="intro intro--form">
+        <h1 class="intro__title">Фотографии пользователей</h1>
+      </header>
       <section class="gallery">
         <div class="gallery__wrapper">
           <p class="gallery__preview">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__photo gallery__photo--panorama-of-the-day" src="img/photo1.jpg" width="100" height="30" alt="Панорама дня">
+              <img class="gallery__photo gallery__photo--panorama-of-the-day" src="img/photo1.jpg" width="320" height="137" alt="Панорама дня">
               <p class="gallery__sticker--panorama-of-the-day">Панорама дня</p>
               <b class="gallery__author">Анна <span class="gallery__time">(5 минут назад)</span></b>
               <p class="gallery__caption">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <p class="gallery__likes">Нравится: 215</p>
             </li>
             <li class="gallery__item">
-              <img class="gallery__photo" src="img/photo2.jpg" width="100" height="50" alt="Фото автомобиля">
+              <img class="gallery__photo" src="img/photo2.jpg" width="280" height="180" alt="Фото автомобиля">
               <b class="gallery__author">Левон <span class="gallery__time">(5 часов назад)</span></b>
               <p class="gallery__caption">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <p class="gallery__likes">Нравится: 356</p>
             </li>
             <li class="gallery__item">
-              <img class="gallery__photo" src="img/photo3.jpg" width="100" height="50" alt="Фото барабанной установки">
+              <img class="gallery__photo" src="img/photo3.jpg" width="280" height="180" alt="Фото барабанной установки">
               <b class="gallery__author">Антон <span class="gallery__time">(12 часов назад)</span></b>
               <p class="gallery__caption">Соседи будут рады!</p>
               <p class="gallery__likes">Нравится: 666</p>
             </li>
             <li class="gallery__item">
-              <img class="gallery__photo" src="img/photo4.jpg" width="100" height="50" alt="Фото неба сквозь стеклянную крышу">
+              <img class="gallery__photo" src="img/photo4.jpg" width="280" height="180" alt="Фото неба сквозь стеклянную крышу">
               <b class="gallery__author">Борис <span class="gallery__time">(20 часов назад)</span></b>
               <p class="gallery__caption">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="gallery__likes">Нравится: 215</p>
             </li>
             <li class="gallery__item">
-              <img class="gallery__photo" src="img/photo5.jpg" width="100" height="50" alt="Фото кубанской бахчи">
+              <img class="gallery__photo" src="img/photo5.jpg" width="280" height="180" alt="Фото кубанской бахчи">
               <b class="gallery__author">Сергей <span class="gallery__time">(25 часов назад)</span></b>
               <p class="gallery__caption">Самая кубанская в мире!</p>
               <p class="gallery__likes">Нравится: 4</p>
             </li>
             <li class="gallery__item">
-              <img class="gallery__photo" src="img/photo6.jpg" width="100" height="50" alt="Фото висящих над обрывом ног">
+              <img class="gallery__photo" src="img/photo6.jpg" width="280" height="180" alt="Фото висящих над обрывом ног">
               <b class="gallery__author">Максим <span class="gallery__time">(40 часов назад)</span></b>
               <p class="gallery__caption">Где снег-то?</p>
               <p class="gallery__likes">Нравится: 150</p>
             </li>
             <li class="gallery__item">
-              <img class="gallery__photo" src="img/photo7.jpg" width="100" height="50" alt="Фото крыла самолета в лучах солнца">
+              <img class="gallery__photo" src="img/photo7.jpg" width="280" height="180" alt="Фото крыла самолета в лучах солнца">
               <b class="gallery__author">Надежда <span class="gallery__time">(45 часов назад)</span></b>
               <p class="gallery__caption">Всем GM и взаимные лайки</p>
               <p class="gallery__likes">Нравится: 2560</p>
             </li>
           </ul>
-          <p class="gallery__call">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="gallery__call">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
 
       <section class="post">
         <div class="post__wrapper">
           <h2 class="visually-hidden">Запостить фотографию</h2>
-          <img class="post__photo" src="img/post-photo.jpg" width="300" height="500" alt="Фото для поста">
-          <div class="post__foto-tool">
-            <button class="photo-tool photo-tool--crop photo-tool--active" type="button"><span class="visually-hidden">Обрезка</span></button>
-            <button class="photo-tool photo-tool--color" type="button"><span class="visually-hidden">Яркость</span></button>
-            <button class="photo-tool photo-tool--lighter" type="button"><span class="visually-hidden">Осветление</span></button>
+          <img class="post__photo" src="img/post-photo.jpg" width="280" height="374" alt="Фото для поста">
+          <div class="post__photo-tool">
+            <button class="photo-tool photo-tool--crop photo-tool--active" type="button"><span class="visually-hidde">Обрезка</span></button>
+            <button class="photo-tool photo-tool--color" type="button"><span class="visually-hidde">Яркость</span></button>
+            <button class="photo-tool photo-tool--lighter" type="button"><span class="visually-hidde">Осветление</span></button>
             <input class="photo-tool__range" type="range" min="0" max="100" step="1" value="50">
           </div>
-          <button class="post__button post__button--send" type="submit">Запостить</button>
-          <button class="post__button post__button--cancel" type="submit">Отмена</button>
+          <button class="post__button button post__button--send" type="submit">Запостить</button>
+          <button class="post__button button post__button--cancel" type="submit">Отмена</button>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="logo-pink-footer" href="index.html">
+        <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/logotype.svg" width="150" height="30" alt="Приложение Pink">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+              <a class="social__link social__link--twitter" href="#"><span class="visually-hidde">Твиттер</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidde">Фейсбук</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
+              <a class="social__link social__link--youtube" href="#"><span class="visually-hidde">Ютуб</span></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidde">HTML Academy</span></a>
         </div>
       </div>
     </footer>
