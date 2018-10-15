@@ -1,21 +1,41 @@
-.main-nav__list {
-  text-align: center;
-
-  @include list-reset;
-}
-
-.site-list__item a {
-  display: block;
+.main-nav {
+  width: 100%;
   margin: 0;
   background-color: $blue-grey;
-  color: $white;
-  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-menu-cross.svg");
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
-  padding: 16px 20px;
-  box-shadow: 0 -1px 0 $black,
-    inset 0 1px 0 rgba($white, 0.15);
+  color: $white;
+  text-transform: uppercase;
+  border-top: 1px solid $black;
+}
+.site-list__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-top: 1px solid rgba($white, 0.15);
+  border-bottom: 1px solid $black;
+}
+
+.site-list__item a {
+  color: $white;
 
   &:hover,
   &:focus {
@@ -27,8 +47,33 @@
   }
 }
 
-.site-list__item:last-child a {
-  box-shadow: 0 -1px 0 $black,
-    inset 0 1px 0 rgba($white, 0.15),
-    inset 0 -1px 0 $black;
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    background-color: rgba($blue-grey, 0.3);
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 130px 20px 20px;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 18px;
+    border: none;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

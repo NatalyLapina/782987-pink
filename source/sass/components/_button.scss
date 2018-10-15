@@ -1,12 +1,11 @@
 .button {
-  display: inline-block;
+  display: block;
   padding: 15px 30px 16px;
   font-family: $font;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   text-align: center;
-  vertical-align: top;
   background-color: transparent;
   color: $white;
   border: none;
@@ -15,7 +14,7 @@
   &--download {
     border: 3px solid $white;
     border-radius: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 
     &:hover,
     &:focus {
