@@ -14,7 +14,7 @@
   border: 0;
   width: 50px;
   height: 24px;
-  background: url(../../img/icon-menu-burger.svg);
+  background: url("../../img/icon-menu-burger.svg");
 }
 
 .main-nav__wrapper {
@@ -51,7 +51,6 @@
   &:active {
     color: rgba($pink, 0.3);
   }
-
 }
 
 .site-list__item:last-child a {

@@ -151,7 +151,7 @@
 
   .prices__table {
     width: 100%;
-    }
+  }
 
   .prices__header {
     padding-top: 12px;
@@ -178,6 +178,8 @@
     padding: 8px 15px;
 
     &--feature-title {
+      display: table-cell;
+      text-transform: none;
       border-top-width: 2px;
     }
   }
@@ -207,11 +209,6 @@
     display: table-cell;
   }
 
-  .prices__item--feature-title {
-    display: table-cell;
-    text-transform: none;
-  }
-
   .prices .slider__toggle-wrapper {
     display: none;
   }
@@ -221,8 +218,8 @@
   .prices {
     padding-top: 141px;
     padding-bottom: 97px;
-
   }
+
   .prices__name {
     font-size: 18px;
     margin-bottom: 3px;
@@ -233,6 +230,7 @@
   }
 
   .prices__item {
+    padding: 15px 21px;
     font-size: 18px;
   }
 
@@ -257,9 +255,5 @@
     left: -1px;
     width: 78px;
     height: 73px;
-  }
-
-  .prices__item {
-    padding: 15px 21px;
   }
 }

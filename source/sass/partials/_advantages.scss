@@ -6,14 +6,14 @@
   margin-bottom: 30px;
 }
 
- .advantages__text {
+.advantages__text {
   margin: 0;
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
- }
+}
 
 .advantages__wrapper {
   background-color: $grey-light;
@@ -44,9 +44,9 @@
   }
 }
 
- .advantages__container {
+.advantages__container {
   padding-top: 42px;
- }
+}
 
 .advantages__list {
   @include list-reset;
@@ -91,6 +91,7 @@
       padding: 0 20px;
     }
   }
+
   .advantages__wrapper {
     &::after {
       left: 0;
@@ -101,6 +102,7 @@
       transform: translateX(8%);
     }
   }
+
   .advantages__list {
     padding-left: 309px;
     padding-top: 31px;
@@ -127,6 +129,7 @@
       padding: 0 110px;
     }
   }
+
   .advantages__wrapper {
     &::after {
       display: none;
