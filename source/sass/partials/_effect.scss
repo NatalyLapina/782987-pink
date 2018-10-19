@@ -1,0 +1,67 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+    min-height: 400px;
+  }
+
+  .effect__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 96px;
+    padding-left: 329px;
+    text-align: left;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+  }
+
+  .effect__text {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  .effect__link {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: $pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    min-height: 445px;
+    background-color: $grey-light;
+  }
+
+  .effect__container {
+    padding-top: 124px;
+    padding-left: 376px;
+  }
+
+  .effect__title {
+    margin-bottom: 27px;
+    line-height: 30px;
+  }
+
+  .effect__text {
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
