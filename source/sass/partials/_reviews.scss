@@ -102,11 +102,26 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    position: relative;
     padding-top: 185px;
     padding-bottom: 52px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 71px;
+      left: 50%;
+      width: 79px;
+      height: 64px;
+      transform: translateX(-50%);
+      margin-left: 2px;
+      background: url("../../img/icon-quotes.svg") no-repeat top left;
+      background-size: 79px 63px;
+    }
   }
 
   .reviews__list {
+    position: relative;
     padding: 0 80px;
   }
 
@@ -120,5 +135,37 @@
 
   .slider__toggle-wrapper {
     display: none;
+  }
+
+  .reviews__nav {
+    display: block;
+    position: absolute;
+    padding: 0;
+    top: 26px;
+    width: 22px;
+    border: none;
+    height: 41px;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+    &--prev {
+      left: 0;
+      background: url("../../img/icon-review-arrow-left.svg") no-repeat top left;
+    }
+
+    &--next {
+      right: 0;
+      background: url("../../img/icon-review-arrow-right.svg") no-repeat top left;
+    }
   }
 }

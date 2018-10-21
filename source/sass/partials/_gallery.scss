@@ -1,11 +1,43 @@
-.gallery {
-  padding-top: 46px;
+.gallery__wrapper {
+  padding-top: 45px;
 }
 
 .gallery__preview {
   margin: 0;
-  padding: 0 37px;
+  margin-bottom: 50px;
+  padding: 0 14px;
+  line-height: 30px;
   text-align: center;
+}
+
+.gallery__list {
+  @include list-reset;
+
+  background-color: $grey;
+  display: flex;
+}
+
+.gallery__item {
+  padding: 25px 17px 28px 17px;
+  background-color: $grey;
+}
+
+.gallery__photo {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.gallery__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.gallery__likes {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $pink;
 }
 
 .gallery__call {
