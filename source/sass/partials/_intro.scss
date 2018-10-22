@@ -24,6 +24,20 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  &--photo {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    min-height: 170px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,6 +64,17 @@
       background-position: -20px bottom;
       z-index: 1;
     }
+
+    &--photo {
+      padding-top: 69px;
+      padding-bottom: 69px;
+      min-height: 330px;
+    }
+  }
+
+  .intro__title {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -68,6 +93,11 @@
     background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-position: 26px bottom;
     margin-bottom: -1px;
+  }
+
+  .intro__inner--photo {
+    padding: 63px 170px;
+    min-height: 284px;
   }
 }
 
@@ -89,3 +119,4 @@
     background-position: center -110px;
   }
 }
+

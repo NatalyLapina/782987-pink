@@ -1,0 +1,371 @@
+.photo-editor {
+  background-color: $grey-light;
+}
+
+.photo-editor__image {
+  padding-top: 20px;
+  width: 280px;
+}
+
+.photo-editor__image img {
+  display: block;
+  margin: 0;
+}
+
+.photo-editor__filter {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 41px;
+}
+
+.photo-editor__filter-wrapper {
+  padding-top: 39px;
+}
+
+.photo-editor__tools {
+  @include list-reset;
+
+  font-size: 0;
+}
+
+.photo-editor__tool-name {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+  margin-left: 16px;
+  width: 48px;
+  height: 50px;
+}
+
+.photo-editor__tool-icon {
+  fill: rgba($blue-grey, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    fill: rgba($blue-grey, 0.5);
+  }
+
+  &--active {
+    fill: $pink;
+  }
+
+  &--crop {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--fill {
+    margin-top: 2px;
+    width: 48px;
+    height: 48px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.photo-editor__range {
+  position: relative;
+  height: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.photo-editor__range-scale {
+  height: 2px;
+  background-color: $blue-grey;
+}
+
+.photo-editor__range-toggle {
+  position: absolute;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  bottom: 0;
+  left: 82%;
+  transform: translateX(-50%);
+  border: 2px solid $pink;
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+  outline: none;
+
+  &:active,
+  &:focus {
+    background-color: $pink;
+  }
+}
+
+.photo-editor__button {
+  position: relative;
+  padding-top: 38px;
+}
+
+.photo-editor__upload-button {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.photo-editor__cancel-button {
+  width: 100%;
+}
+
+
+@media (max-width: 659px) {
+  .photo-editor__inner {
+    width: 100%;
+    padding: 0;
+  }
+
+  .photo-editor__image {
+    width: 320px;
+    padding-left: 18px;
+    padding-right: 22px;
+    margin: 0 auto;
+  }
+
+  .photo-editor__filter-wrapper {
+    width: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;;
+  }
+
+  .photo-editor__tools {
+    position: relative;
+    padding-bottom: 72px;
+  }
+
+  .photo-editor__tool {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .photo-editor__control {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 28px;
+    background-color: $grey-light;
+
+    &--crop {
+      display: block;
+    }
+  }
+
+  .photo-editor__button-inner {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-editor__form {
+    display: flex;
+  }
+
+  .photo-editor__image {
+    width: 300px;
+    padding-top: 59px;
+    padding-bottom: 54px;
+    margin: 0;
+  }
+
+  .photo-editor__image img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-editor__filter {
+    padding-top: 40px;
+    padding-bottom: 54px;
+    margin-left: 45px;
+    width: 275px;
+    flex-grow: 1;
+  }
+
+  .photo-editor__filter-wrapper {
+    padding: 0;
+  }
+
+  .photo-editor__tool {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 24px;
+
+    &--contrast {
+      padding-top: 22px;
+      padding-bottom: 24px;
+    }
+  }
+
+  .photo-editor__tool-name {
+    margin-right: 1px;
+    margin-left: 3px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .photo-editor__tool-icon {
+    fill: $pink;
+
+    &--crop {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 24px;
+    }
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .photo-editor__control {
+    position: relative;
+    padding-left: 27px;
+    padding-right: 18px;
+    width: 100%;
+  }
+
+  .photo-editor__button {
+    margin-top: auto;
+  }
+
+  .photo-editor__button-inner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+    padding-right: 13px;
+  }
+
+  .photo-editor__upload-button {
+    margin-bottom: 25px;
+  }
+
+  .photo-editor__range--crop .photo-editor__range-toggle {
+    left: 76%;
+  }
+
+  .photo-editor__range--fill .photo-editor__range-toggle {
+    left: 16%;
+  }
+
+  .photo-editor__range--contrast .photo-editor__range-toggle {
+    left: 51%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-editor {
+    background-color: transparent;
+  }
+
+  .photo-editor__form {
+    padding-left: 80px;
+    padding-right: 60px;
+    background-color: $grey-light;
+  }
+
+  .photo-editor__image {
+    padding-bottom: 57px;
+  }
+
+  .photo-editor__filter {
+    padding-bottom: 57px;
+    margin-left: 91px;
+  }
+
+  .photo-editor__tool {
+    padding-top: 12px;
+    padding-bottom: 13px;
+
+    &--contrast {
+      padding-top: 10px;
+      padding-bottom: 12px;
+    }
+  }
+
+  .photo-editor__tool-name {
+    margin: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  .photo-editor__tool-icon {
+    &--crop {
+    width: 48px;
+    height: 48px;
+    margin-left: -2px;
+    margin-top: 1px;
+    }
+
+    &--fill {
+      margin-top: 3px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+      margin-left: -2px;
+    }
+  }
+
+  .photo-editor__control {
+    padding-top: 14px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 44px;
+
+    &--contrast {
+      padding-top: 13px;
+      padding-top: 11px;
+    }
+  }
+
+  .photo-editor__button-inner {
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+  }
+
+  .photo-editor__upload-button {
+    margin-bottom: 0;
+    width: 183px;
+  }
+
+  .photo-editor__cancel-button {
+    width: 183px;
+    margin-left: auto;
+  }
+
+  .photo-editor__range--crop .photo-editor__range-toggle {
+    left: 27%;
+  }
+
+  .photo-editor__range--fill .photo-editor__range-toggle {
+    left: 88%;
+  }
+
+  .photo-editor__range--contrast .photo-editor__range-toggle {
+    left: 58%;
+  }
+}
