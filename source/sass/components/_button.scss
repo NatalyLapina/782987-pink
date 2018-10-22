@@ -31,21 +31,21 @@
   }
 
   &--upload {
-  border: 3px solid $pink;
-  border-radius: 30px;
-  color: $pink;
-  background-color: transparent;
+    border: 3px solid $pink;
+    border-radius: 30px;
+    color: $pink;
+    background-color: transparent;
 
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: $pink;
-  }
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $pink;
+    }
 
-  &:active {
-    color: rgba($white, 0.3);
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
-}
 
   &--cancel {
     border: 3px solid $blue-grey;
@@ -94,7 +94,6 @@
 .photo__like-button {
   width: 13px;
   height: 12px;
-  background-color: transparent;
   border: none;
   padding: 0;
   text-indent: -1000px;
@@ -106,9 +105,9 @@
 @media (min-width: $tablet-width) {
   .button {
     &--download {
-    margin: 0;
-    margin-bottom: 47px;
-    width: 300px;
+      margin: 0;
+      margin-bottom: 47px;
+      width: 300px;
     }
   }
 }
@@ -128,5 +127,3 @@
     background-size: 14px 12px;
   }
 }
-
-

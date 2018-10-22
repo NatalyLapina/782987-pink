@@ -163,7 +163,6 @@
 
   .photo__description--panorama .photo__text {
     order: 3;
-
   }
 
   .photo__action {
@@ -171,8 +170,8 @@
     padding-left: 0;
 
     &--panorama {
-        margin-top: 0;
-        order: 2;
+      margin-top: 0;
+      order: 2;
     }
   }
 
@@ -196,6 +195,7 @@
     &--panorama {
       margin-bottom: 50px;
     }
+
     &--item {
       min-height: 555px;
       margin-bottom: 54px;
@@ -242,5 +242,5 @@
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
- }
+  }
 }
