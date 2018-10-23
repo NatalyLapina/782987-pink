@@ -253,6 +253,7 @@ input[type="radio"] {
   color: $blue-grey;
   border: 2px solid $grey;
   outline: 0;
+  resize: none;
 }
 
 .form__footer {
@@ -510,8 +511,9 @@ input[type="radio"] {
   }
 
   .form__fieldset--achievements {
-    height: 235px;
     margin: 0;
+    padding-bottom: 6px;
+    margin-bottom: 5px;
   }
 
   .form__field-list--achievements {
@@ -552,7 +554,7 @@ input[type="radio"] {
     width: 940px;
     margin-top: 0;
     padding-bottom: 0;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 
   .form__title--contacts {
@@ -575,6 +577,7 @@ input[type="radio"] {
 
   .form__field-text--mail::before {
     right: 2px;
+    top: 2px;
   }
 
   .form__field-text--number {
@@ -584,6 +587,7 @@ input[type="radio"] {
 
   .form__field-text--number::before {
     right: 1px;
+    top: 2px;
   }
 
   .form__wrapper--apps {
@@ -623,7 +627,7 @@ input[type="radio"] {
   .form__fieldset--emotions {
     width: 940px;
     min-height: 222px;
-    margin-bottom: 47px;
+    margin-bottom: 68px;
   }
 
   .form__title--emotions {
@@ -636,13 +640,17 @@ input[type="radio"] {
 
   .form__textarea {
     width: 821px;
-    min-height: 100px;
+    min-height: 127px;
     padding-top: 14px;
-    margin-bottom: 34px;
+    margin-bottom: 0;
   }
 
   .form__footer {
     width: 940px;
-    margin-bottom: 32px;
+    margin-bottom: -35px;
+  }
+
+  .form__note--hidden {
+    display: inline-block;
   }
 }
