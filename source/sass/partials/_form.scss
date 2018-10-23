@@ -490,13 +490,13 @@ input[type="radio"] {
     &--fullname {
       width: 430px;
       margin-right: 70px;
-      margin-top: 22px;
+      margin-top: 14px;
       margin-bottom: 0;
     }
   }
 
   .form__text-input {
-    width: 341px;
+    width: 340px;
     margin-bottom: 52px;
 
     &--name {
@@ -550,9 +550,9 @@ input[type="radio"] {
 
   .form__fieldset--contacts {
     width: 940px;
-    height: 152px;
-    margin-top: -3px;
-    margin-bottom: 57px;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 56px;
   }
 
   .form__title--contacts {
@@ -560,16 +560,17 @@ input[type="radio"] {
   }
 
   .form__text-label--contacts {
-    margin-left: 54px;
+    margin-left: 77px;
   }
 
   .form__text-input--contacts {
     width: 374px;
-    margin-left: 35px;
+    margin-left: 59px;
+    margin-bottom: 11px;
   }
 
   .form__field-text--mail {
-    margin-left: 23px;
+    margin-left: -3px;
   }
 
   .form__field-text--mail::before {
@@ -578,6 +579,7 @@ input[type="radio"] {
 
   .form__field-text--number {
     margin-right: 14px;
+    margin-bottom: 8px;
   }
 
   .form__field-text--number::before {
@@ -585,21 +587,23 @@ input[type="radio"] {
   }
 
   .form__wrapper--apps {
-    margin-top: 7px;
+    margin-top: -2px;
   }
 
   .form__fieldset--apps {
-    width: 430px;
+    width: 435px;
     margin-bottom: 15px;
+    padding-bottom: 13px;
   }
 
   .form__title--apps {
     width: 370px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   .form__radio-input + .form__radio-label {
     padding-left: 133px;
+    margin-bottom: 50px;
   }
 
   .form__radio-input:checked + .form__radio-label::after {
@@ -607,7 +611,8 @@ input[type="radio"] {
   }
 
   .form__radio-input + .form__radio-label::before {
-    left: 74px;
+    left: 75px;
+    top: -6px;
   }
 
   .form__field-list--contacts {
