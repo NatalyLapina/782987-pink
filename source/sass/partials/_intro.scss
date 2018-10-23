@@ -25,7 +25,8 @@
     margin-right: auto;
   }
 
-  &--photo {
+  &--photo,
+  &--form {
     padding-top: 29px;
     padding-bottom: 29px;
     min-height: 170px;
@@ -70,6 +71,11 @@
       padding-bottom: 69px;
       min-height: 330px;
     }
+
+    &--form {
+      padding-top: 68px;
+      padding-bottom: 80px;
+    }
   }
 
   .intro__title {
@@ -95,9 +101,17 @@
     margin-bottom: -1px;
   }
 
-  .intro__inner--photo {
-    padding: 63px 170px;
-    min-height: 284px;
+  .intro__inner {
+    &--photo {
+      padding: 63px 170px;
+      min-height: 284px;
+    }
+
+    &--form {
+      padding-top: 63px;
+      padding-bottom: 100px;
+      min-height: 283px;
+    }
   }
 }
 

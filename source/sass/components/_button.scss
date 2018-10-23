@@ -68,7 +68,7 @@
 
   &--submit,
   &--popup {
-    padding: 17px 30px 16px;
+    padding: 17px 47px 16px;
     border-radius: 3px;
     font-size: 18px;
     line-height: 30px;
@@ -108,6 +108,10 @@
       margin: 0;
       margin-bottom: 47px;
       width: 300px;
+    }
+
+    &--submit {
+      padding: 17px 57px 16px;
     }
   }
 }
