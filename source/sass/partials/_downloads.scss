@@ -1,16 +1,31 @@
 .downloads {
-  padding: 28px 20px;
+  padding-top: 28px;
+  padding-bottom: 29px;
   background-color: $blue-grey-dark;
   text-align: center;
 }
 
+.downloads__button {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
 .downloads__list {
   @include list-reset;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.downloads__item {
+  width: 80px;
 }
 
 .downloads__link {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   width: 47px;
   height: 56px;
   margin-right: 16px;
@@ -24,17 +39,89 @@
   &--android {
     background: url("../../img/logo-android.svg") no-repeat;
     background-size: 43px 47px;
+    margin-top: 7px;
   }
 
   &--windows {
     background: url("../../img/logo-microsoft.svg") no-repeat;
     background-size: 44px 41px;
+    margin-top: 12px;
   }
 }
 
-.downloads__title {
+.downloads__text {
   margin: 0;
-  padding: 0;
   font-weight: 300;
   color: $white;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .downloads {
+    padding: 93px 0;
+    width: 300px;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  .downloads__call {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+
+  .downloads__button {
+    margin-bottom: 46px;
+  }
+
+  .downloads__list {
+    margin-bottom: 25px;
+  }
+
+  .downloads__text {
+    margin: 0;
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .downloads {
+    padding: 109px 0;
+  }
+
+  .downloads__call {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .downloads__button {
+    margin-bottom: 67px;
+  }
+
+  .downloads__list {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 659px) {
+  .downloads__wrapper {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  .downloads__call {
+    display: none;
+  }
 }

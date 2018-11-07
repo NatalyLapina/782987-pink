@@ -1,13 +1,13 @@
 body {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
+  margin: 0;
   padding: 0;
-  font-family: $font;
-  font-size: $font-size;
-  line-height: $line-height;
+  font-family: ("Open Sans", "Arial", sans-serif);
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
-  color: $font-color;
-  background-color: $bg-color;
+  color: $blue-grey;
+  background-color: $white;
 }
 
 html {
@@ -32,4 +32,25 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
   @include visually-hidden;
+}
+
+.container {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

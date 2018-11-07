@@ -2,10 +2,35 @@
   padding-top: 45px;
 }
 
-.competition__lead {
-  padding-left: 22px;
-  padding-right: 22px;
+.competition__preview {
   margin: 0;
+  margin-bottom: 37px;
   line-height: 30px;
   text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .competition {
+    padding-top: 93px;
+  }
+
+  .competition__preview {
+    font-size: 18px;
+    padding: 0 40px;
+    margin-bottom: 71px;
+
+    &--hidden {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__preview {
+    padding: 0 80px;
+  }
 }

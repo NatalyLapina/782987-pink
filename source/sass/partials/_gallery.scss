@@ -1,17 +1,29 @@
 .gallery {
-  padding-top: 46px;
+  padding-top: 45px;
 }
 
 .gallery__preview {
-  margin: 0;
-  padding: 0 37px;
+  margin-bottom: 50px;
+  padding: 0 35px;
+  line-height: 30px;
   text-align: center;
 }
 
-.gallery__call {
-  margin: 0;
-  margin-bottom: 48px;
-  padding: 0 30px;
-  line-height: 30px;
-  text-align: center;
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding-top: 92px;
+  }
+
+  .gallery__preview {
+    padding: 0 50px;
+    font-size: 18px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__preview {
+    padding: 0 160px;
+    margin-bottom: 90px;
+  }
 }
