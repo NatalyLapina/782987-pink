@@ -5,13 +5,18 @@
 }
 
 .form__fieldset {
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  padding-top: 0;
   border: none;
 
   &--fullname {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
+
+  &--achievements {
+    padding: 0 20px;
+  }
+
 }
 
 input[type="checkbox"],
