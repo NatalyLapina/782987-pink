@@ -22,10 +22,6 @@
   cursor: pointer;
 }
 
-// .main-nav__toggle span {
-//   font-size: 0;
-// }
-
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;

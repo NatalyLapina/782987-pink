@@ -1,6 +1,6 @@
 .prices {
   position: relative;
-  padding-top: 89px;
+  padding-top: 90px;
   padding-bottom: 47px;
   background-color: $grey-light;
   text-transform: uppercase;
@@ -47,7 +47,7 @@
   color: $white;
   text-transform: uppercase;
   padding: 20px;
-  padding-top: 19px;
+  padding-top: 18px;
   background-clip: padding-box;
 
   &:first-of-type {
@@ -136,7 +136,7 @@
 }
 
 .prices .slider__toggle-wrapper {
-  margin-top: 41px;
+  margin-top: 38px;
 }
 
 .slider__toggle--grey {
@@ -145,7 +145,7 @@
 
 @media (min-width: $tablet-width) {
   .prices {
-    padding-top: 90px;
+    padding-top: 88px;
     padding-bottom: 67px;
   }
 
@@ -217,7 +217,7 @@
 @media (min-width: $desktop-width) {
   .prices {
     padding-top: 141px;
-    padding-bottom: 97px;
+    padding-bottom: 92px;
   }
 
   .prices__name {
