@@ -2,6 +2,10 @@
   padding-top: 40px;
 }
 
+.advantages__title {
+  @include container;
+}
+
 .advantages__slogan {
   margin-bottom: 30px;
 }
@@ -45,6 +49,8 @@
 }
 
 .advantages__container {
+  @include container;
+
   padding-top: 40px;
 }
 

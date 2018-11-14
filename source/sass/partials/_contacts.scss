@@ -1,4 +1,5 @@
 .contacts {
+  @include container;
   padding-top: 42px;
   text-align: center;
 }

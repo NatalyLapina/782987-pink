@@ -20,6 +20,10 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 a {
   text-decoration: none;
 }
@@ -34,23 +38,24 @@ input[type="checkbox"].visually-hidden {
   @include visually-hidden;
 }
 
-.container {
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
+// .container {
+//   width: 320px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
+// }
 
-@media (min-width: $tablet-width) {
-  .container {
-    width: 660px;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .container {
+//     width: 660px;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .container {
-    width: 960px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .container {
+//     width: 960px;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//   }
+// }
+
