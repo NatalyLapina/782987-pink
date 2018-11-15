@@ -9,6 +9,7 @@
 }
 
 .intro__inner {
+  @include container;
   position: relative;
 
   &--hand::before {
@@ -102,6 +103,9 @@
   }
 
   .intro__inner {
+    width: auto;
+    margin: 0;
+
     &--photo {
       padding: 63px 170px;
       min-height: 284px;

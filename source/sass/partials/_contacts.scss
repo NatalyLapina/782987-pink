@@ -143,6 +143,10 @@
     }
   }
 
+  .contacts__item--email .contacts__item-info {
+    padding-left: 0;
+  }
+
   .contacts__map {
     height: 375px;
     background-image: url("../../img/bg-map-mobile@1x.png");

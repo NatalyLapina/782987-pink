@@ -50,7 +50,6 @@
 
 .advantages__container {
   @include container;
-
   padding-top: 40px;
 }
 
@@ -100,21 +99,19 @@
 
   .advantages__wrapper {
     &::after {
-      left: 0;
-      top: 0;
-      width: 268px;
-      height: 481px;
-      background: url("../../img/iphone-screen-3-tablet@1x.png");
-      transform: translateX(8%);
+      display: none;
     }
   }
 
   .advantages__list {
+    position: relative;
     padding-left: 309px;
     padding-top: 31px;
     padding-bottom: 0;
     min-height: 440px;
     text-align: left;
+
+
   }
 
   .advantages__item {
@@ -133,12 +130,6 @@
 
     &:last-child {
       padding: 0 110px;
-    }
-  }
-
-  .advantages__wrapper {
-    &::after {
-      display: none;
     }
   }
 
