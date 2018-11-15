@@ -10,7 +10,7 @@
   }
 }
 
-.page-header__wrapper {
+.page-header--full .page-header__wrapper {
   width: 100%;
 }
 
@@ -25,6 +25,10 @@
 @media (min-width: $tablet-width) {
   .page-header {
     min-height: 110px;
+  }
+
+  .page-header--full .page-header__wrapper {
+    width: 100%;
   }
 
   .page-header__logo {
@@ -42,7 +46,7 @@
   }
 
   .page-header__wrapper {
-    width: 940px;
+    @include container;
     margin-left: auto;
     margin-right: auto;
     display: flex;

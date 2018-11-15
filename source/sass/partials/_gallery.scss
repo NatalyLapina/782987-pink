@@ -3,6 +3,7 @@
 }
 
 .gallery__preview {
+  @include container;
   margin-bottom: 50px;
   padding: 0 35px;
   line-height: 30px;

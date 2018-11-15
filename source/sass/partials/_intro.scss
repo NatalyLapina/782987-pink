@@ -99,12 +99,10 @@
     height: 645px;
     background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-position: 26px bottom;
-    margin-bottom: -1px;
   }
 
   .intro__inner {
-    width: auto;
-    margin: 0;
+    width: $desktop-width;
 
     &--photo {
       padding: 63px 170px;

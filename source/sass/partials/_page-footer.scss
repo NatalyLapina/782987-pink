@@ -1,7 +1,6 @@
 .page-footer {
   @include container;
   display: block;
-  margin-bottom: 40px;
 
   &--index {
     display: none;
@@ -10,6 +9,7 @@
 
 .page-footer__wrapper {
   padding-top: 40px;
+  padding-bottom: 37px;
   text-align: center;
 }
 
@@ -67,11 +67,6 @@
     min-height: 127px;
   }
 
-  .page-footer__social {
-    width: 190px;
-    margin-left: -20px;
-  }
-
   .social__list {
     justify-content: space-between;
     margin: 0 auto;
@@ -88,13 +83,13 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-top: 69px;
+    padding-top: 71px;
     padding-bottom: 34px;
     min-height: 197px;
   }
 
   .page-footer__social {
-    margin-left: 8px;
+    margin-left: 20px;
   }
 
   .page-footer__copyright {

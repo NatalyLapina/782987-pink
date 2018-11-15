@@ -5,6 +5,7 @@
     <title>Пинк: Конкурс</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
 
@@ -36,20 +37,20 @@
     <main class="page-main-form">
 
       <header class="intro intro--short">
-        <div class="intro__inner intro__inner--form container">
+        <div class="intro__inner intro__inner--form">
           <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </header>
 
       <section class="competition">
 
-        <p class="competition__preview container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <p class="competition__preview">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="competition__preview--hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
         <div class="competition__inner">
           <form class="form" method="post" action="http://echo.htmlacademy.ru">
-            <fieldset class="form__fieldset form__fieldset--fullname container">
-              <legend class="visually-hidden">ФИО пользователя</legend>
+            <fieldset class="form__fieldset form__fieldset--fullname">
+              <h2 class="visually-hidden">ФИО пользователя</h2>
               <div class="form__field-text">
                 <label class="form__text-label" for="user-last-name">Фамилия:</label>
                 <input class="form__text-input" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *" required>
@@ -66,7 +67,7 @@
 
             <div class="form__wrapper form__wrapper--achievements">
               <fieldset class="form__fieldset form__fieldset--achievements">
-                <legend class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</legend>
+                <h2 class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</h2>
                 <div class="form__field-list form__field-list--achievements">
                   <div class="form__field-checkbox">
                     <input class="form__checkbox-input" type="checkbox" id="achivement-1" name="Достижения" value="Сделал селфи с акулой" checked>
@@ -96,8 +97,8 @@
               </fieldset>
             </div>
 
-            <fieldset class="form__fieldset form__fieldset--contacts container">
-              <legend class="form__title form__title--contacts form__title--hidden">Контактная информация</legend>
+            <fieldset class="form__fieldset form__fieldset--contacts">
+              <h2 class="form__title form__title--contacts form__title--hidden">Контактная информация</h2>
               <div class="form__field-list form__field-list--contacts">
                 <div class="form__field-text form__field-text--contacts form__field-text--number">
                   <label class="form__text-label form__text-label--contacts" for="user-phone">Номер телефона</label>
@@ -112,7 +113,7 @@
 
             <div class="form__wrapper form__wrapper--apps">
               <fieldset class="form__fieldset form__fieldset--apps">
-                <legend class="form__title form__title--apps">С каким приложением путешествовали?</legend>
+                <h2 class="form__title form__title--apps">С каким приложением путешествовали?</h2>
                 <div class="form__field-list form__field-list--apps">
                   <div class="form__radio-fields form__radio-fields--apps">
                     <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
@@ -130,14 +131,14 @@
               </fieldset>
             </div>
 
-            <fieldset class="form__fieldset form__fieldset--emotions container">
-              <legend class="form__title form__title--emotions">Опишите свои эмоции</legend>
+            <fieldset class="form__fieldset form__fieldset--emotions">
+              <h2 class="form__title form__title--emotions">Опишите свои эмоции</h2>
               <div class="form__textarea-fields form__textarea-fields--emotions">
                 <textarea class="form__textarea form__textarea--emotions" name="Сообщение" rows="5" cols="20" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
 
-            <div class="form__footer container">
+            <div class="form__footer">
               <div class="form__button">
                   <button class="form__submit-button button button--submit" type="submit">Отправить форму</button>
               </div>
@@ -148,7 +149,7 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Pink">
