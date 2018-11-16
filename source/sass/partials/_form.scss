@@ -4,26 +4,65 @@
   margin: 0;
 }
 
+.form__wrapper {
+  &--achievements,
+  &--apps {
+    background-color: $grey-light;
+  }
+}
+
 .form__fieldset {
+  margin: 0 auto;
+  padding: 0;
   @include container;
 
-  margin: 0 auto;
-  padding-top: 0;
   border: none;
 
   &--fullname {
-    margin-bottom: 15px;
+    margin-bottom: 23px;
+  }
+
+  &--achievements {
+    margin-bottom: 23px;
   }
 
   &--contacts {
-    background-color: $white;
-    border: none;
-    outline: none;
-    margin-bottom: 26px;
+    // background-color: $white;
+    // border: none;
+    // outline: none;
+    margin-bottom: 25px;
+    padding-top: 35px;
+  }
+}
+
+.form__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $pink;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+
+
+  &--achievements {
+    margin-bottom: 47px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--apps {
+    margin-bottom: 42px;
   }
 
   &--emotions {
-    min-height: 270px;
+    margin-bottom: 17px;
   }
 }
 
@@ -35,7 +74,6 @@ input[type="radio"] {
 .form__field-text {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1px;
 }
 
 .form__text-label {
@@ -56,10 +94,10 @@ input[type="radio"] {
   height: 63px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   border: 2px solid $grey;
   background-color: transparent;
-  outline: 0;
+  outline: none;
 
   &:hover {
     border: 2px solid $blue-grey;
@@ -68,86 +106,11 @@ input[type="radio"] {
   &:active {
     border: 2px solid $pink;
   }
-
-  &--contacts {
-    width: 278px;
-    height: 63px;
-    padding-right: 10px;
-    padding-left: 20px;
-    margin-bottom: 17px;
-    border: 2px solid $grey;
-    background-color: transparent;
-    font-size: 18px;
-    outline: 0;
-
-    &:hover {
-      border: 2px solid $blue-grey;
-    }
-
-    &:active {
-      border: 2px solid $pink;
-    }
-  }
-}
-
-.form__wrapper {
-  &--achievements {
-    background-color: $grey-light;
-    margin-bottom: 34px;
-  }
-
-  &--apps {
-    background-color: $grey-light;
-  }
-}
-
-.form__title {
-  &--achievements {
-    margin: 0;
-    padding: 0;
-    padding-top: 36px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-bottom: 47px;
-    line-height: 19px;
-    color: $pink;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &--hidden {
-    display: none;
-  }
-
-  &--apps {
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding-top: 38px;
-    margin-bottom: 44px;
-    line-height: 18px;
-    font-weight: 400;
-    color: $pink;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &--emotions {
-    padding-top: 36px;
-    padding-bottom: 17px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    line-height: 18px;
-    color: $pink;
-    text-align: center;
-  }
 }
 
 .form__checkbox-input + .form__checkbox-label {
   position: relative;
-  padding-left: 89px;
+  padding-left: 69px;
   display: block;
   font-size: 18px;
   color: $blue-grey;
@@ -157,7 +120,7 @@ input[type="radio"] {
     content: "";
     position: absolute;
     top: -8px;
-    left: 20px;
+    left: 0;
     width: 38px;
     height: 38px;
     background-color: $white;
@@ -170,7 +133,7 @@ input[type="radio"] {
   display: block;
   position: absolute;
   top: 5px;
-  left: 29px;
+  left: 10px;
   width: 22px;
   height: 8px;
   border-bottom: 2px solid $pink;
@@ -187,19 +150,17 @@ input[type="radio"] {
 }
 
 .form__field-checkbox {
-  padding-bottom: 10px;
-  margin-bottom: 48px;
+  margin-bottom: 58px;
 
   &:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 26px;
   }
 }
 
 .form__radio-input + .form__radio-label {
   position: relative;
   display: block;
-  padding-left: 89px;
-  margin-bottom: 51px;
+  padding-left: 69px;
   font-size: 18px;
   color: $blue-grey;
   cursor: pointer;
@@ -209,7 +170,7 @@ input[type="radio"] {
   content: "";
   position: absolute;
   top: 4px;
-  left: 32px;
+  left: 12px;
   width: 15px;
   height: 15px;
   background-color: $pink;
@@ -220,7 +181,7 @@ input[type="radio"] {
   content: "";
   position: absolute;
   top: -7px;
-  left: 21px;
+  left: 1px;
   width: 37px;
   height: 37px;
   background: $white;
@@ -236,6 +197,13 @@ input[type="radio"] {
   border: 2px solid $pink;
 }
 
+.form__radio-fields {
+  margin-bottom: 51px;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}
 
 .form__textarea-fields {
   display: block;
@@ -244,17 +212,15 @@ input[type="radio"] {
 }
 
 .form__textarea {
-  width: 279px;
+  width: 280px;
   margin-bottom: 42px;
-  padding-right: 14px;
-  padding-left: 18px;
-  padding-top: 14px;
+  padding: 14px 18px;
   min-height: 200px;
   font-size: 18px;
   line-height: 30px;
   color: $blue-grey;
   border: 2px solid $grey;
-  outline: 0;
+  outline: none;
   resize: none;
 }
 
@@ -286,7 +252,7 @@ input[type="radio"] {
 @media (min-width: $tablet-width) {
   .form__fieldset {
     &--fullname {
-      margin-bottom: 5px;
+      margin-bottom: 15px;
     }
 
     &--achievements {
@@ -297,18 +263,17 @@ input[type="radio"] {
     }
 
     &--contacts {
-      margin-top: 53px;
+      width: 620px;
       padding-bottom: 21px;
-      order: 1;
+      padding-top: 0;
       border: 2px solid $grey;
     }
 
     &--apps {
-      margin-right: 20px;
-      margin-left: 20px;
-      padding-bottom: 10px;
+      width: 620px;
       border: 2px solid $grey;
-      background-color: $white;
+      padding-bottom: 11px;
+      margin-bottom:65px;
     }
 
     &--emotions {
@@ -318,6 +283,24 @@ input[type="radio"] {
       border: 2px solid $grey-light;
     }
   }
+
+  .form__wrapper {
+    &--achievements {
+      background-color: $white;
+      order: 2;
+    }
+
+    &--apps {
+      background-color: $white;
+      @include container;
+    }
+
+    &--contacts {
+      order: 1;
+      @include container;
+    }
+  }
+
 
   .form__field-text {
     flex-direction: row;
@@ -332,8 +315,8 @@ input[type="radio"] {
       &::before {
         content: "";
         position: absolute;
-        right: 60px;
-        top: 1px;
+        right: 40px;
+        top: 2px;
         width: 60px;
         height: 60px;
         background-image: url("../../img/icon-mail.svg");
@@ -349,8 +332,8 @@ input[type="radio"] {
       &::before {
         content: "";
         position: absolute;
-        right: 60px;
-        top: 1px;
+        right: 40px;
+        top: 2px;
         width: 60px;
         height: 60px;
         background-image: url("../../img/icon-phone.svg");
@@ -367,14 +350,14 @@ input[type="radio"] {
     margin-left: 0;
 
     &--contacts {
-      margin-left: 77px;
-      margin-top: 4px;
+      margin-left: 57px;
+      margin-top: 13px;
     }
   }
 
   .form__text-input {
     width: 525px;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
     padding-left: 20px;
 
     &--name {
@@ -383,60 +366,42 @@ input[type="radio"] {
 
     &--contacts {
       width: 500px;
-      margin-left: 57px;
-      padding-right: 60px;
-      margin-bottom: 9px;
-      padding-left: 18px;
-    }
-  }
-
-  .form__wrapper {
-    &--achievements {
-      background-color: $white;
-      order: 2;
-    }
-
-    &--apps {
-      background-color: $white;
+      margin: 0 auto;
     }
   }
 
   .form__title {
+    position: relative;
+    top: -10px;
+    left: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 32px;
+    // width: auto;
+    background-color: $white;
+    transform: translateX(-50%);
+
     &--achievements {
       width: 430px;
       padding: 0;
       margin-top: -9px;
       margin-left: 72px;
       margin-bottom: 51px;
-      background-color: $white;
     }
 
     &--contacts {
-      display: block;
-      width: 260px;
-      margin: 0;
-      margin-top: -16px;
-      margin-left: 155px;
-      margin-bottom: 35px;
-      text-align: center;
-      color: $pink;
-      background-color: $white;
-      text-transform: uppercase;
+      padding: 0 30px;
+      margin-bottom: 26px;
     }
 
     &--apps {
-      width: 392px;
-      margin-bottom: 52px;
-      padding: 0;
-      padding-top: 2px;
-      background-color: $white;
+      padding: 0 25px;
+      margin-bottom: 40px;
     }
 
     &--emotions {
       width: 255px;
-      padding: 0;
       margin-bottom: 29px;
-      background-color: $white;
     }
   }
 
@@ -454,18 +419,18 @@ input[type="radio"] {
   }
 
   .form__radio-input + .form__radio-label {
-    padding-left: 117px;
+    padding-left: 97px;
     margin-bottom: 51px;
   }
 
   .form__radio-input:checked + .form__radio-label::after {
-    top: 4px;
-    left: 70px;
+    top: 5px;
+    left: 50px;
   }
 
   .form__radio-input + .form__radio-label::before {
-    top: -7px;
-    left: 59px;
+    top: -6px;
+    left: 39px;
   }
 
   .form__textarea-fields {
