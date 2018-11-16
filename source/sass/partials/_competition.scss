@@ -33,4 +33,9 @@
   .competition__preview {
     padding: 0 80px;
   }
+
+  .competition__inner {
+    @include container;
+    padding-top: 14px;
+  }
 }
