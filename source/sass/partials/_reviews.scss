@@ -1,6 +1,8 @@
 .reviews {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  @include container;
+
+  padding-top: 42px;
+  padding-bottom: 40px;
 }
 
 .reviews__list {
@@ -25,7 +27,7 @@
 
 .reviews__author-name {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   padding: 0;
   color: $black;
   font-size: 18px;
@@ -34,6 +36,7 @@
 }
 
 .reviews__text {
+  width: 100%;
   margin: 0;
   line-height: 30px;
 }
@@ -104,7 +107,7 @@
   .reviews {
     position: relative;
     padding-top: 185px;
-    padding-bottom: 52px;
+    padding-bottom: 49px;
 
     &::before {
       content: "";

@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   color: $blue-grey;
   background-color: $white;
+  overflow-x: hidden;
 }
 
 html {
@@ -32,25 +33,4 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
   @include visually-hidden;
-}
-
-.container {
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: 960px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }

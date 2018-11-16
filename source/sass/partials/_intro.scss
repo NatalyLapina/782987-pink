@@ -9,6 +9,7 @@
 }
 
 .intro__inner {
+  @include container;
   position: relative;
 
   &--hand::before {
@@ -98,10 +99,11 @@
     height: 645px;
     background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-position: 26px bottom;
-    margin-bottom: -1px;
   }
 
   .intro__inner {
+    width: $desktop-width;
+
     &--photo {
       padding: 63px 170px;
       min-height: 284px;

@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
 
@@ -14,7 +15,7 @@
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -36,7 +37,7 @@
     <main class="page-main-index">
 
       <header class="intro intro--short">
-        <div class="intro__inner intro__inner--index intro__inner--hand container">
+        <div class="intro__inner intro__inner--index intro__inner--hand">
           <h1 class="visually-hidden">Мобильное приложение Pink</h1>
           <section class="downloads">
             <div class="downloads__wrapper">
@@ -61,7 +62,7 @@
       </header>
 
       <section class="advantages">
-        <div class="slogan__container container">
+        <div class="advantages__title">
           <h2 class="visually-hidden">Что может предложить наше приложение</h2>
           <div class="advantages__slogan">
             <p class="advantages__text">Устали от серости мегаполиса?</p>
@@ -69,7 +70,7 @@
           </div>
         </div>
         <div class="advantages__wrapper">
-          <div class="advantages__container container">
+          <div class="advantages__container">
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--mood">
                 <h3 class="advantages__caption">Поднимает настроение</h3>
@@ -89,7 +90,7 @@
       </section>
 
       <section class="effect">
-        <div class="effect__container container">
+        <div class="effect__container">
           <div class="effect__clock">
             <svg class="clock__timer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
               <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"></path>
@@ -105,7 +106,7 @@
       </section>
 
       <section class="reviews">
-        <div class="container">
+        <!-- <div class="container"> -->
           <h2 class="visually-hidden">Отзывы пользователей о приложении</h2>
           <div class="reviews__wrapper slider">
             <div class="reviews__list slider__list">
@@ -135,11 +136,11 @@
               </ul>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="prices">
-        <div class="container">
+        <div class="prices__container">
           <h2 class="prices-title visually-hidden">Стоимость приложения</h2>
           <div class="prices__wrapper">
             <table class="prices__table">
@@ -225,32 +226,30 @@
       </section>
 
       <section class="contacts">
-        <div class="container">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-          <ul class="contacts__list">
-            <li class="contacts__item contacts__item--phone">
-              <h3 class="contacts__caption">Звоните:</h3>
-              <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="contacts__item contacts__item--email">
-              <h3 class="contacts__caption">Пишите:</h3>
-              <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item contacts__item--address">
-              <h3 class="contacts__caption">Приезжайте в гости:</h3>
-              <address class="contacts__item-info">ул. Большая Конюшенная, 19/8</address>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts__item-map">
-          <img class="map-image" src="img/bg-map-desktop@1x.jpg" width="1200" height="976" alt="Местоположение на карте">
-        </div>
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--phone">
+            <h3 class="contacts__caption">Звоните:</h3>
+            <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item contacts__item--email">
+            <h3 class="contacts__caption">Пишите:</h3>
+            <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item contacts__item--address">
+            <h3 class="contacts__caption">Приезжайте в гости:</h3>
+            <address class="contacts__item-info">ул. Большая Конюшенная, 19/8</address>
+          </li>
+        </ul>
       </section>
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.64071274706!2d30.320236443771122!3d59.9381037999653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1542109332259"></iframe>
+      </div>
 
     </main>
 
-    <footer class="page-footer page-footer--index container">
+    <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Pink">

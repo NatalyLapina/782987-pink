@@ -3,6 +3,7 @@
 }
 
 .photo-upload__call {
+  @include container;
   margin-bottom: 43px;
   text-align: center;
   line-height: 30px;
