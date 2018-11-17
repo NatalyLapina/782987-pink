@@ -69,7 +69,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: rgba($blue-grey, 0.5);
   }
 

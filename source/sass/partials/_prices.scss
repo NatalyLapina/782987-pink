@@ -10,7 +10,7 @@
   &::before {
     position: absolute;
     content: "";
-    background: url("../../img/bg-triangle-white.svg");
+    background: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 100%;
@@ -73,7 +73,7 @@
     left: -2px;
     width: 74px;
     height: 73px;
-    background: url("../../img/bg-hit.svg") no-repeat top left;
+    background: url("../img/bg-hit.svg") no-repeat top left;
     background-size: 74px 73px;
   }
 }
@@ -129,12 +129,12 @@
   overflow: hidden;
 
   &--on {
-    background: url("../../img/icon-yes.svg") no-repeat center;
+    background: url("../img/icon-yes.svg") no-repeat center;
     background-size: 31px 21px;
   }
 
   &--off {
-    background: url("../../img/icon-no.svg") no-repeat center;
+    background: url("../img/icon-no.svg") no-repeat center;
     background-size: 27px 26px;
   }
 }
@@ -166,7 +166,7 @@
       left: 0;
       width: 61px;
       height: 61px;
-      background: url("../../img/bg-hit-tablet.svg") no-repeat top left;
+      background: url("../img/bg-hit-tablet.svg") no-repeat top left;
       background-size: 61px 61px;
     }
   }
@@ -249,7 +249,7 @@
       left: 0;
       width: 74px;
       height: 73px;
-      background: url("../../img/bg-hit.svg") no-repeat top left;
+      background: url("../img/bg-hit.svg") no-repeat top left;
       background-size: 74px 73px;
     }
   }

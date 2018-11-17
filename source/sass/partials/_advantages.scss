@@ -26,7 +26,7 @@
   &::before {
     position: absolute;
     content: "";
-    background: url("../../img/bg-triangle-white.svg");
+    background: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 100%;
@@ -37,7 +37,7 @@
   &::after {
     position: absolute;
     content: "";
-    background: url("../../img/iphone-screen-mobile@1x.png");
+    background: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center top;
     height: 277px;
@@ -118,7 +118,7 @@
     &--friend::before {
       content: "";
       position: absolute;
-      background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
       background-position: center top;
       bottom: 0;
@@ -163,7 +163,7 @@
     &--mood::before {
       content: "";
       position: absolute;
-      background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: center top;
       top: -16px;
@@ -175,7 +175,7 @@
     &--world::before {
       content: "";
       position: absolute;
-      background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: center top;
       top: -16px;
@@ -185,7 +185,7 @@
     }
 
     &--friend::before {
-      background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
       top: -16px;
       right: 52px;
       left: auto;
