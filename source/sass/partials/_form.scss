@@ -98,7 +98,8 @@ input[type="radio"] {
   background-color: transparent;
   outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 2px solid $blue-grey;
   }
 
@@ -224,7 +225,8 @@ input[type="radio"] {
   outline: none;
   resize: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 2px solid $blue-grey;
   }
 
@@ -337,7 +339,7 @@ input[type="radio"] {
         top: 2px;
         width: 60px;
         height: 59px;
-        background-image: url("../../img/icon-mail.svg");
+        background-image: url("../img/icon-mail.svg");
         background-repeat: no-repeat;
         background-color: $grey;
         background-position: 50% 50%;
@@ -354,7 +356,7 @@ input[type="radio"] {
         top: 2px;
         width: 60px;
         height: 59px;
-        background-image: url("../../img/icon-phone.svg");
+        background-image: url("../img/icon-phone.svg");
         background-repeat: no-repeat;
         background-color: $grey;
         background-position: 50% 50%;

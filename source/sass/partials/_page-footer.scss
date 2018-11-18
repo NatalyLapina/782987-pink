@@ -45,7 +45,8 @@
 .copyright__htmlacademy {
   fill: $pink;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $blue-grey;
   }
 
