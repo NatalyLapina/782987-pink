@@ -63,10 +63,10 @@
   }
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: none;
-}
+// input[type="checkbox"],
+// input[type="radio"] {
+//   display: none;
+// }
 
 .form__field-text {
   display: flex;
@@ -195,6 +195,11 @@ input[type="radio"] {
 
 .form__radio-input + .form__radio-label:active::before {
   border: 2px solid $pink;
+}
+
+.form__checkbox-input:focus + .form__checkbox-label,
+.form__radio-input:focus + .form__radio-label {
+  outline: thin dotted;
 }
 
 .form__radio-fields {
@@ -622,6 +627,7 @@ input[type="radio"] {
 
   .form__radio-input:checked + .form__radio-label::after {
     left: 86px;
+    top: 5px;
   }
 
   .form__radio-input + .form__radio-label::before {
