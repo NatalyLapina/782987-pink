@@ -31,22 +31,3 @@ successClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupSuccess.classList.remove("popup-success__show");
 });
-
-
-
-
-
-
-
-
-// buttonForm.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   popupError.classList.add("popup-error__show");
-//   errorClose.focus();
-// });
-// buttonForm.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   popupSuccess.classList.add("popup-success__show");
-//   successClose.focus();
-// });
-

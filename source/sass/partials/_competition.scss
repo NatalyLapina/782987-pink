@@ -7,10 +7,10 @@
   margin-bottom: 37px;
   line-height: 30px;
   text-align: center;
+}
 
-  &--hidden {
-    display: none;
-  }
+.competition__remark {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,10 +22,10 @@
     font-size: 18px;
     padding: 0 50px;
     margin-bottom: 71px;
+  }
 
-    &--hidden {
-      display: inline;
-    }
+  .competition__remark {
+    display: inline;
   }
 }
 

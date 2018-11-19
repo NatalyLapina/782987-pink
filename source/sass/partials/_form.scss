@@ -250,10 +250,10 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+}
 
-  &--hidden {
-    display: none;
-  }
+.form__note-hidden {
+  display: none;
 }
 
 .form__note sup {
@@ -665,11 +665,9 @@
     margin: 0;
   }
 
-  .form__note {
-    &--hidden {
+  .form__note-hidden {
       display: inline-block;
     }
-  }
 
   .form__button {
     margin-bottom: 0;
