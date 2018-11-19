@@ -7,7 +7,7 @@ navMain.classList.remove("main-nav--nojs");
 pageHeader.classList.remove("page-header--full");
 pageIntro.classList.remove("intro--short");
 
-navToggle.addEventListener("click", function() {
+navToggle.addEventListener("click", function(evt) {
   if (navMain.classList.contains("main-nav--closed")) {
     navMain.classList.remove("main-nav--closed");
     navMain.classList.add("main-nav--opened");
