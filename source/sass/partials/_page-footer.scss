@@ -13,7 +13,6 @@
   text-align: center;
 }
 
-
 .social__list {
   @include list-reset;
 
@@ -42,7 +41,7 @@
   height: 34px;
 }
 
-.copyright__htmlacademy {
+.copyright__logo {
   fill: $pink;
 
   &:hover,
@@ -52,6 +51,7 @@
 
   &:active {
     opacity: 0.3;
+    fill: $blue-grey;
   }
 }
 
