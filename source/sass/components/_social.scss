@@ -3,6 +3,14 @@
   margin-top: 30px;
 }
 
+.social__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .social__link {
   position: relative;
   display: inline-block;
@@ -13,8 +21,13 @@
   border-radius: 50%;
   margin: 5px 6px;
 
-  &:hover:not(:active) {
+  &:hover,
+  &:focus {
     border-color: $blue-grey;
+  }
+
+  &:active {
+    border-color: rgba($blue-grey, 0.1);
   }
 }
 
@@ -52,6 +65,12 @@
   .social {
     margin-top: 0;
   }
+
+  .social__list {
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
 
   .social__link {
     margin-top: 3px;

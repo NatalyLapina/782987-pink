@@ -13,13 +13,23 @@
   text-align: center;
 }
 
+.page-footer__logo-mobile {
+  width: 146px;
+  height: 40px;
+  fill: $blue-grey;
 
-.social__list {
-  @include list-reset;
+  &:hover {
+    fill: $pink;
+  }
 
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  &:active {
+    fill: $blue-grey;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
 }
 
 .page-footer__copyright {
@@ -42,7 +52,7 @@
   height: 34px;
 }
 
-.copyright__htmlacademy {
+.copyright__logo {
   fill: $pink;
 
   &:hover,
@@ -52,12 +62,15 @@
 
   &:active {
     opacity: 0.3;
+    fill: $blue-grey;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer--index {
-    display: block;
+  .page-footer {
+    &--index {
+      display: block;
+    }
   }
 
   .page-footer__wrapper {
@@ -65,12 +78,6 @@
     justify-content: space-between;
     padding-top: 34px;
     padding-bottom: 34px;
-    min-height: 127px;
-  }
-
-  .social__list {
-    justify-content: space-between;
-    margin: 0 auto;
   }
 
   .page-footer__copyright {
@@ -84,9 +91,29 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-top: 71px;
+    padding-top: 66px;
     padding-bottom: 34px;
     min-height: 197px;
+  }
+
+  .page-footer__logo-mobile {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
+    width: 146px;
+    height: 40px;
+    fill: $blue-grey;
+
+    &:hover {
+      fill: $pink;
+    }
+
+    &:active {
+      fill: $blue-grey;
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {
