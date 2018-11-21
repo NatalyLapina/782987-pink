@@ -30,7 +30,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/**/*.svg")
+  return gulp.src("source/img/**/+(icon-|logo-)*.svg")
     .pipe(svgstore({
       inlineSvg: true
   }))
@@ -101,5 +101,3 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("build", "server"));
-
-

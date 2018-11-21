@@ -28,7 +28,7 @@
       background-image: url("../img/icon-timer.svg");
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      }
+    }
   }
 
   .effect__hour {
@@ -96,12 +96,13 @@
 
   .effect__clock {
     padding-top: 0;
+
     &::before {
       right: -297px;
       top: -1px;
       width: 298px;
       height: 345px;
-      }
+    }
   }
 
   .effect__hour {

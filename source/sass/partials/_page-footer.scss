@@ -32,14 +32,6 @@
   display: none;
 }
 
-.social__list {
-  @include list-reset;
-
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
 .page-footer__copyright {
   font-size: 0;
   margin-top: 34px;
@@ -77,21 +69,15 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     &--index {
-    display: block;
+      display: block;
+    }
   }
-}
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 34px;
     padding-bottom: 34px;
-    min-height: 127px;
-  }
-
-  .social__list {
-    justify-content: space-between;
-    margin: 0 auto;
   }
 
   .page-footer__copyright {
