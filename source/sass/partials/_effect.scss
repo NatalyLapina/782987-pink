@@ -17,17 +17,23 @@
   .effect__clock {
     position: relative;
     padding-top: 58px;
-  }
 
-  .effect__timer {
-    width: 238px;
-    height: 276px;
-    fill: #dedede;
+    &::before {
+      content: "";
+      position: absolute;
+      right: -239px;
+      top: 60px;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      }
   }
 
   .effect__hour {
     position: absolute;
-    top: 113px;
+    top: 115px;
     left: 18px;
     width: 202px;
     height: 202px;
@@ -47,7 +53,7 @@
     flex-direction: column;
     width: 100%;
     padding-top: 98px;
-    padding-left: 70px;
+    padding-left: 309px;
     text-align: left;
   }
 
@@ -80,7 +86,7 @@
   }
 
   .effect__wrapper {
-    padding-left: 68px;
+    padding-left: 366px;
     padding-top: 93px;
   }
 
@@ -90,11 +96,12 @@
 
   .effect__clock {
     padding-top: 0;
-  }
-
-  .effect__timer {
-    width: 298px;
-    height: 345px;
+    &::before {
+      right: -297px;
+      top: -1px;
+      width: 298px;
+      height: 345px;
+      }
   }
 
   .effect__hour {
