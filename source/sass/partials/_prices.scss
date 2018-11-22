@@ -76,17 +76,18 @@
     background: url("../img/bg-hit.svg") no-repeat top left;
     background-size: 74px 73px;
   }
-}
 
-.prices__flag {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 78px;
-  height: 73px;
-  transform: rotate(-45deg);
-  font-weight: 400;
-  font-size: 14px;
+  &--flag::after {
+    content: "Хит";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 78px;
+    height: 73px;
+    transform: rotate(-45deg);
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 
 .prices__item {
@@ -187,13 +188,13 @@
       background: url("../img/bg-hit-tablet.svg") no-repeat top left;
       background-size: 61px 61px;
     }
-  }
 
-  .prices__flag {
-    top: -2px;
-    left: -1px;
-    width: 61px;
-    height: 61px;
+    &--flag::after {
+      top: -2px;
+      left: -1px;
+      width: 61px;
+      height: 61px;
+    }
   }
 
   .prices__item {
@@ -261,21 +262,17 @@
     padding-bottom: 20px;
 
     &--flag::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 74px;
       height: 73px;
       background: url("../img/bg-hit.svg") no-repeat top left;
       background-size: 74px 73px;
     }
-  }
 
-  .prices__flag {
-    top: 6px;
-    left: -1px;
-    width: 78px;
-    height: 73px;
+    &--flag::after {
+      top: 6px;
+      left: -1px;
+      width: 78px;
+      height: 73px;
+    }
   }
 }
