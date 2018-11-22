@@ -139,8 +139,30 @@
   }
 }
 
-.prices .slider__toggle-wrapper {
+.prices__slider-wrapper {
   margin-top: 41px;
+}
+
+.prices__toggles {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-around;
+  width: 75px;
+  margin: 0 auto;
+}
+
+.prices__toggle {
+  @include slider-toggle;
+
+  &--active {
+    border: solid 3px $blue-grey;
+    background-color: $white;
+  }
+
+  &--grey {
+    border: solid 3px $grey-light;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -209,7 +231,7 @@
     display: table-cell;
   }
 
-  .prices .slider__toggle-wrapper {
+  .prices__slider-wrapper {
     display: none;
   }
 }
